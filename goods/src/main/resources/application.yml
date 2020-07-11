@@ -1,0 +1,13 @@
+server:
+  port: 7080
+spring:
+  application:
+    name: heit-goods
+eureka:
+  client:
+    service-url:
+      defaultZone: http://lyp:123@127.0.0.1:8888/eureka
+    register-with-eureka: true
+
+
+

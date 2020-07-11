@@ -1,0 +1,24 @@
+
+order:
+  goods:
+    url: http://192.168.1.101:7080
+server:
+  port: 6080
+
+spring:
+  application:
+    name: heit-order
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://lyp:123@127.0.0.1:8888/eureka
+    register-with-eureka: true
+    fetch-registry: true
+
+management:
+  endpoint:
+    web:
+      expourse:
+        include: "*"
+

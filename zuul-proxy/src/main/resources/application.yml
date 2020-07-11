@@ -1,0 +1,19 @@
+server:
+  port: 1111
+spring:
+  application:
+    name: zuul-proxy
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://lyp:123@localhost:8888/eureka
+
+zuul:
+  routes:
+    order-service:
+      path: /order-service/**
+
+      #url: http://127.0.0.1:6080
+      serviceId: HEIT-ORDER

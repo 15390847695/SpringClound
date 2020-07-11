@@ -1,0 +1,15 @@
+server:
+  port: 2222
+spring:
+  application:
+    name: heit-config
+  cloud:
+    config:
+      #uri: https://github.com/15390847695/SpringcloudConfig.git
+
+      server:
+        git:
+          username: 15390847695
+          password: 15979671864ad
+          default-label: master
+          uri: https://github.com/15390847695/SpringcloudConfig.git

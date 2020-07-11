@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    config:
+      name: order
+      uri: http://127.0.0.1:2222/
+      profile: prod
+      label: master
